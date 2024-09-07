@@ -11,7 +11,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var allMiniAppsTableView: UITableView!
     
-    let miniApps = ["Погода", "Заметки"]
+    let miniApps = ["Погода", "Заметки","Калькулятор"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,13 +20,6 @@ class MainViewController: UIViewController {
         allMiniAppsTableView.dataSource = self
         
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-    }
-
-
 
 }
 

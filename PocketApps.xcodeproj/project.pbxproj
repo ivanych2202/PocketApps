@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2CB7A4932C8C32E5004430DF /* MiniAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7A4922C8C32E4004430DF /* MiniAppsViewController.swift */; };
+		2CB7A49B2C8CC5BD004430DF /* CalculatorMiniApp in Frameworks */ = {isa = PBXBuildFile; productRef = 2CB7A49A2C8CC5BD004430DF /* CalculatorMiniApp */; };
 		2CE491CD2C8B2D1D000EF0DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE491CC2C8B2D1D000EF0DD /* AppDelegate.swift */; };
 		2CE491CF2C8B2D1D000EF0DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE491CE2C8B2D1D000EF0DD /* SceneDelegate.swift */; };
 		2CE491D12C8B2D1D000EF0DD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE491D02C8B2D1D000EF0DD /* MainViewController.swift */; };
@@ -35,6 +36,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE491E22C8B458E000EF0DD /* WeatherMiniApp in Frameworks */,
+				2CB7A49B2C8CC5BD004430DF /* CalculatorMiniApp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +92,7 @@
 			name = PocketApps;
 			packageProductDependencies = (
 				2CE491E12C8B458E000EF0DD /* WeatherMiniApp */,
+				2CB7A49A2C8CC5BD004430DF /* CalculatorMiniApp */,
 			);
 			productName = PocketApps;
 			productReference = 2CE491C92C8B2D1D000EF0DD /* PocketApps.app */;
@@ -121,6 +124,7 @@
 			mainGroup = 2CE491C02C8B2D1D000EF0DD;
 			packageReferences = (
 				2CE491E02C8B458E000EF0DD /* XCLocalSwiftPackageReference "../WeatherMiniApp" */,
+				2CB7A4992C8CC5BD004430DF /* XCLocalSwiftPackageReference "../CalculatorMiniApp" */,
 			);
 			productRefGroup = 2CE491CA2C8B2D1D000EF0DD /* Products */;
 			projectDirPath = "";
@@ -379,6 +383,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
+		2CB7A4992C8CC5BD004430DF /* XCLocalSwiftPackageReference "../CalculatorMiniApp" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../CalculatorMiniApp;
+		};
 		2CE491E02C8B458E000EF0DD /* XCLocalSwiftPackageReference "../WeatherMiniApp" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../WeatherMiniApp;
@@ -386,6 +394,10 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2CB7A49A2C8CC5BD004430DF /* CalculatorMiniApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CalculatorMiniApp;
+		};
 		2CE491E12C8B458E000EF0DD /* WeatherMiniApp */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WeatherMiniApp;

@@ -7,12 +7,13 @@
 
 import UIKit
 import WeatherMiniApp
+import CalculatorMiniApp
 
 class MiniAppsViewController: UIViewController {
     
     @IBOutlet weak var miniAppsTableView: UITableView!
     
-    let miniApps = ["Погода", "Заметки"]
+    let miniApps = ["Погода", "Заметки","Калькулятор"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,7 @@ class MiniAppsViewController: UIViewController {
         miniAppsTableView.delegate = self
         miniAppsTableView.dataSource = self 
     }
+    
 }
 
 extension MiniAppsViewController: UITableViewDelegate, UITableViewDataSource {
@@ -45,6 +47,11 @@ extension MiniAppsViewController: UITableViewDelegate, UITableViewDataSource {
             let weatherVC = WeatherViewController()
             weatherVC.modalPresentationStyle = .fullScreen
             present(weatherVC, animated: true, completion: nil)
+            
+        } else if miniApp == "Калькулятор" {
+            let calculatorVC = CalculatorMiniApp.createViewController()
+            calculatorVC.modalPresentationStyle = .fullScreen
+            present(calculatorVC, animated: true, completion: nil)
         }
     }
     
