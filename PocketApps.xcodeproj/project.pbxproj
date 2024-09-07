@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		2CE491D42C8B2D1D000EF0DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE491D22C8B2D1D000EF0DD /* Main.storyboard */; };
 		2CE491D62C8B2D1F000EF0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE491D52C8B2D1F000EF0DD /* Assets.xcassets */; };
 		2CE491D92C8B2D1F000EF0DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE491D72C8B2D1F000EF0DD /* LaunchScreen.storyboard */; };
+		2CE491E22C8B458E000EF0DD /* WeatherMiniApp in Frameworks */ = {isa = PBXBuildFile; productRef = 2CE491E12C8B458E000EF0DD /* WeatherMiniApp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE491E22C8B458E000EF0DD /* WeatherMiniApp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = PocketApps;
+			packageProductDependencies = (
+				2CE491E12C8B458E000EF0DD /* WeatherMiniApp */,
+			);
 			productName = PocketApps;
 			productReference = 2CE491C92C8B2D1D000EF0DD /* PocketApps.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 2CE491C02C8B2D1D000EF0DD;
+			packageReferences = (
+				2CE491E02C8B458E000EF0DD /* XCLocalSwiftPackageReference "../WeatherMiniApp" */,
+			);
 			productRefGroup = 2CE491CA2C8B2D1D000EF0DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -298,8 +306,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -327,8 +335,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -365,6 +373,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		2CE491E02C8B458E000EF0DD /* XCLocalSwiftPackageReference "../WeatherMiniApp" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../WeatherMiniApp;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2CE491E12C8B458E000EF0DD /* WeatherMiniApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WeatherMiniApp;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CE491C12C8B2D1D000EF0DD /* Project object */;
 }
