@@ -17,23 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RhS-1a-3JU">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mBi-EN-zUK">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="fum-ow-RPU"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="XRx-Q3-KWT"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="RhS-1a-3JU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7pU-Z2-3gl"/>
-                            <constraint firstItem="RhS-1a-3JU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CRD-HN-WlF"/>
-                            <constraint firstItem="RhS-1a-3JU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S4P-lB-o4O"/>
-                            <constraint firstAttribute="bottom" secondItem="RhS-1a-3JU" secondAttribute="bottom" id="hiE-5n-5QM"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Hbp-hr-wMt"/>
                     <connections>
-                        <outlet property="allMiniAppsTableView" destination="RhS-1a-3JU" id="Y1W-xc-tNw"/>
+                        <outlet property="scrollView" destination="mBi-EN-zUK" id="LxC-Qj-CGf"/>
                         <segue destination="79P-Qi-tqu" kind="show" identifier="MainToAppsListSegue" id="MHX-He-FFr"/>
                     </connections>
                 </viewController>
@@ -50,7 +46,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q0w-Ve-A0S">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -75,13 +71,15 @@
         <!--Navigation Controller-->
         <scene sceneID="DIQ-AB-gky">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YaT-Z3-tWN" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="YaT-Z3-tWN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ijn-i2-2Fg">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iao-ub-SqG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iXL-Bj-TRo"/>
                     </connections>

@@ -8,6 +8,7 @@
 import UIKit
 import WeatherMiniApp
 import CalculatorMiniApp
+import NotesMiniApp
 
 class MiniAppsViewController: UIViewController {
     
@@ -50,6 +51,11 @@ extension MiniAppsViewController: UITableViewDelegate, UITableViewDataSource {
             
         } else if miniApp == "Калькулятор" {
             let calculatorVC = CalculatorMiniApp.createViewController()
+            calculatorVC.modalPresentationStyle = .fullScreen
+            present(calculatorVC, animated: true, completion: nil)
+            
+        } else if miniApp == "Заметки" {
+            let calculatorVC = NotesMiniApp.createViewController()
             calculatorVC.modalPresentationStyle = .fullScreen
             present(calculatorVC, animated: true, completion: nil)
         }
