@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  PocketApps
-//
-//  Created by Ivan Elonov on 06.09.2024.
-
 import UIKit
 
 class MainViewController: UIViewController {
@@ -11,7 +5,9 @@ class MainViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     
     private var contentView: UIView!
-    private let itemHeight: CGFloat = UIScreen.main.bounds.height / 8
+    private var itemHeight: CGFloat {
+        return UIScreen.main.bounds.height / 8
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +21,26 @@ class MainViewController: UIViewController {
         scrollView.startInfiniteScroll()
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        coordinator.animate(alongsideTransition: { _ in
+            self.updateScrollViewContent()
+        }, completion: nil)
+    }
+    
     private func setupScrollView() {
         scrollView.showsVerticalScrollIndicator = false
         scrollView.isUserInteractionEnabled = false
         
         contentView = UIView()
         scrollView.addSubview(contentView)
+        
+        updateScrollViewContent()
+    }
+    
+    private func updateScrollViewContent() {
+        contentView.subviews.forEach { $0.removeFromSuperview() }
         
         var yOffset: CGFloat = 0
         for _ in 0..<20 {

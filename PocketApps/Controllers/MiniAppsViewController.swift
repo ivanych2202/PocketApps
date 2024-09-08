@@ -64,7 +64,6 @@ extension MiniAppsViewController: UITableViewDelegate, UITableViewDataSource {
         case "Заметки":
             viewControllerToPresent = NotesMiniApp.createViewController()
         default:
-            print("Unknown mini app")
             return
         }
         
