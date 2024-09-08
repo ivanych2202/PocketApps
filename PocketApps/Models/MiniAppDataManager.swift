@@ -13,9 +13,9 @@ class MiniAppDataManager {
     private init() {}
     
     let miniApps = [
-        MiniApp(name: "Погода", imageName: "weatherIcon"),
-        MiniApp(name: "Заметки", imageName: "notesIcon"),
-        MiniApp(name: "Калькулятор", imageName: "calculatorIcon")
+        MiniApp(name: "Погода", imageName: "weatherIcon", previewImageName: "WeatherPreview"),
+        MiniApp(name: "Заметки", imageName: "notesIcon", previewImageName: "NotesPreview"),
+        MiniApp(name: "Калькулятор", imageName: "calculatorIcon", previewImageName: "CalculatorPreview")
     ]
     
     func createItemView(for app: MiniApp, yOffset: CGFloat, itemHeight: CGFloat, viewWidth: CGFloat) -> UIView {

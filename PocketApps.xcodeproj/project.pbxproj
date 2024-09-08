@@ -10,6 +10,7 @@
 		2C6073022C8D22A300E74FAB /* MiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6073012C8D22A300E74FAB /* MiniApp.swift */; };
 		2C6073042C8D22F800E74FAB /* MiniAppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6073032C8D22F800E74FAB /* MiniAppDataManager.swift */; };
 		2C6073062C8D257600E74FAB /* InfinityScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6073052C8D257600E74FAB /* InfinityScrollView.swift */; };
+		2C60730C2C8D2C5500E74FAB /* MiniAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C60730B2C8D2C5500E74FAB /* MiniAppCell.swift */; };
 		2CAB86532C8D08D80059EDA0 /* NotesMiniApp in Frameworks */ = {isa = PBXBuildFile; productRef = 2CAB86522C8D08D80059EDA0 /* NotesMiniApp */; };
 		2CB7A4932C8C32E5004430DF /* MiniAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7A4922C8C32E4004430DF /* MiniAppsViewController.swift */; };
 		2CB7A49B2C8CC5BD004430DF /* CalculatorMiniApp in Frameworks */ = {isa = PBXBuildFile; productRef = 2CB7A49A2C8CC5BD004430DF /* CalculatorMiniApp */; };
@@ -26,6 +27,7 @@
 		2C6073012C8D22A300E74FAB /* MiniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniApp.swift; sourceTree = "<group>"; };
 		2C6073032C8D22F800E74FAB /* MiniAppDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppDataManager.swift; sourceTree = "<group>"; };
 		2C6073052C8D257600E74FAB /* InfinityScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityScrollView.swift; sourceTree = "<group>"; };
+		2C60730B2C8D2C5500E74FAB /* MiniAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppCell.swift; sourceTree = "<group>"; };
 		2CB7A4922C8C32E4004430DF /* MiniAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppsViewController.swift; sourceTree = "<group>"; };
 		2CE491C92C8B2D1D000EF0DD /* PocketApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE491CC2C8B2D1D000EF0DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				2CE491D22C8B2D1D000EF0DD /* Main.storyboard */,
 				2CE491D72C8B2D1F000EF0DD /* LaunchScreen.storyboard */,
+				2C60730B2C8D2C5500E74FAB /* MiniAppCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -81,6 +84,7 @@
 		2C60730A2C8D26F500E74FAB /* Utitlities */ = {
 			isa = PBXGroup;
 			children = (
+				2CE491D52C8B2D1F000EF0DD /* Assets.xcassets */,
 				2C6073052C8D257600E74FAB /* InfinityScrollView.swift */,
 			);
 			path = Utitlities;
@@ -111,7 +115,6 @@
 				2C6073092C8D268F00E74FAB /* Views */,
 				2C6073082C8D265700E74FAB /* Controllers */,
 				2C60730A2C8D26F500E74FAB /* Utitlities */,
-				2CE491D52C8B2D1F000EF0DD /* Assets.xcassets */,
 				2CE491DA2C8B2D1F000EF0DD /* Info.plist */,
 			);
 			path = PocketApps;
@@ -200,6 +203,7 @@
 			files = (
 				2C6073022C8D22A300E74FAB /* MiniApp.swift in Sources */,
 				2CE491D12C8B2D1D000EF0DD /* MainViewController.swift in Sources */,
+				2C60730C2C8D2C5500E74FAB /* MiniAppCell.swift in Sources */,
 				2CE491CD2C8B2D1D000EF0DD /* AppDelegate.swift in Sources */,
 				2CE491CF2C8B2D1D000EF0DD /* SceneDelegate.swift in Sources */,
 				2C6073062C8D257600E74FAB /* InfinityScrollView.swift in Sources */,

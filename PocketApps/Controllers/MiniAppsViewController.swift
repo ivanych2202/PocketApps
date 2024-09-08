@@ -14,13 +14,18 @@ class MiniAppsViewController: UIViewController {
     
     @IBOutlet weak var miniAppsTableView: UITableView!
     
-    let miniApps = ["Погода", "Заметки","Калькулятор"]
+    let miniApps = [
+        MiniApp(name: "Погода", imageName: "weatherIcon", previewImageName: "WeatherPreview"),
+        MiniApp(name: "Заметки", imageName: "notesIcon", previewImageName: "NotesPreview"),
+        MiniApp(name: "Калькулятор", imageName: "calculatorIcon", previewImageName: "CalculatorPreview")
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         miniAppsTableView.delegate = self
-        miniAppsTableView.dataSource = self 
+        miniAppsTableView.dataSource = self
+        miniAppsTableView.register(MiniAppCell.self, forCellReuseIdentifier: "MiniAppCell")
     }
     
 }
@@ -32,9 +37,9 @@ extension MiniAppsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MiniAppCell", for: indexPath) as! MiniAppCell
         let miniApp = miniApps[indexPath.row % miniApps.count]
-        cell.textLabel?.text = miniApp
+        cell.configure(with: miniApp)
         return cell
     }
     
@@ -43,24 +48,27 @@ extension MiniAppsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let miniApp = miniApps[indexPath.row % miniApps.count]
-        if miniApp == "Погода" {
-            let weatherVC = WeatherViewController()
-            weatherVC.modalPresentationStyle = .fullScreen
-            present(weatherVC, animated: true, completion: nil)
-            
-        } else if miniApp == "Калькулятор" {
-            let calculatorVC = CalculatorMiniApp.createViewController()
-            calculatorVC.modalPresentationStyle = .fullScreen
-            present(calculatorVC, animated: true, completion: nil)
-            
-        } else if miniApp == "Заметки" {
-            let calculatorVC = NotesMiniApp.createViewController()
-            calculatorVC.modalPresentationStyle = .fullScreen
-            present(calculatorVC, animated: true, completion: nil)
-        }
+        presentMiniApp(miniApp)
     }
     
-    
+    private func presentMiniApp(_ miniApp: MiniApp) {
+        var viewControllerToPresent: UIViewController
+        
+        switch miniApp.name {
+        case "Погода":
+            viewControllerToPresent = WeatherViewController()
+        case "Калькулятор":
+            viewControllerToPresent = CalculatorMiniApp.createViewController()
+        case "Заметки":
+            viewControllerToPresent = NotesMiniApp.createViewController()
+        default:
+            print("Unknown mini app")
+            return
+        }
+        
+        viewControllerToPresent.modalPresentationStyle = .fullScreen
+        present(viewControllerToPresent, animated: true, completion: nil)
+    }
 }
-
