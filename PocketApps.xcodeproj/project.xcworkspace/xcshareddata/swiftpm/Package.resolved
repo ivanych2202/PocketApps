@@ -1,6 +1,24 @@
 {
   "pins" : [
     {
+      "identity" : "calculatorminiapp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ivanych2202/CalculatorMiniApp",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6b661f73fcdfa15930d497a7bb80736e88fbeb39"
+      }
+    },
+    {
+      "identity" : "notesminiapp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ivanych2202/NotesMiniApp",
+      "state" : {
+        "branch" : "main",
+        "revision" : "df6f71256d43f4b08a0c346aa8e7e357b389b2dc"
+      }
+    },
+    {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-core.git",
@@ -16,6 +34,15 @@
       "state" : {
         "revision" : "9b9992d59a5148eb557e6c0445fec05009022c8c",
         "version" : "10.53.1"
+      }
+    },
+    {
+      "identity" : "weatherminiapp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ivanych2202/WeatherMiniApp",
+      "state" : {
+        "branch" : "main",
+        "revision" : "11d2bfb0fd04e756451be075aab3bd3d97f233a4"
       }
     }
   ],

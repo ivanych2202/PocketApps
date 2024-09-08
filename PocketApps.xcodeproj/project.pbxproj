@@ -3,24 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3CADA32C8D45D1006F9A5E /* CalculatorMiniApp in Frameworks */ = {isa = PBXBuildFile; productRef = 2C3CADA22C8D45D1006F9A5E /* CalculatorMiniApp */; };
+		2C3CADA62C8D45E8006F9A5E /* WeatherMiniApp in Frameworks */ = {isa = PBXBuildFile; productRef = 2C3CADA52C8D45E8006F9A5E /* WeatherMiniApp */; };
 		2C6073022C8D22A300E74FAB /* MiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6073012C8D22A300E74FAB /* MiniApp.swift */; };
 		2C6073042C8D22F800E74FAB /* MiniAppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6073032C8D22F800E74FAB /* MiniAppDataManager.swift */; };
 		2C6073062C8D257600E74FAB /* InfinityScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6073052C8D257600E74FAB /* InfinityScrollView.swift */; };
 		2C60730C2C8D2C5500E74FAB /* MiniAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C60730B2C8D2C5500E74FAB /* MiniAppCell.swift */; };
-		2CAB86532C8D08D80059EDA0 /* NotesMiniApp in Frameworks */ = {isa = PBXBuildFile; productRef = 2CAB86522C8D08D80059EDA0 /* NotesMiniApp */; };
+		2C9109722C8D4CC000640213 /* NotesMiniApp in Frameworks */ = {isa = PBXBuildFile; productRef = 2C9109712C8D4CC000640213 /* NotesMiniApp */; };
 		2CB7A4932C8C32E5004430DF /* MiniAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7A4922C8C32E4004430DF /* MiniAppsViewController.swift */; };
-		2CB7A49B2C8CC5BD004430DF /* CalculatorMiniApp in Frameworks */ = {isa = PBXBuildFile; productRef = 2CB7A49A2C8CC5BD004430DF /* CalculatorMiniApp */; };
 		2CE491CD2C8B2D1D000EF0DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE491CC2C8B2D1D000EF0DD /* AppDelegate.swift */; };
 		2CE491CF2C8B2D1D000EF0DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE491CE2C8B2D1D000EF0DD /* SceneDelegate.swift */; };
 		2CE491D12C8B2D1D000EF0DD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE491D02C8B2D1D000EF0DD /* MainViewController.swift */; };
 		2CE491D42C8B2D1D000EF0DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE491D22C8B2D1D000EF0DD /* Main.storyboard */; };
 		2CE491D62C8B2D1F000EF0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE491D52C8B2D1F000EF0DD /* Assets.xcassets */; };
 		2CE491D92C8B2D1F000EF0DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE491D72C8B2D1F000EF0DD /* LaunchScreen.storyboard */; };
-		2CE491E22C8B458E000EF0DD /* WeatherMiniApp in Frameworks */ = {isa = PBXBuildFile; productRef = 2CE491E12C8B458E000EF0DD /* WeatherMiniApp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,9 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE491E22C8B458E000EF0DD /* WeatherMiniApp in Frameworks */,
-				2CAB86532C8D08D80059EDA0 /* NotesMiniApp in Frameworks */,
-				2CB7A49B2C8CC5BD004430DF /* CalculatorMiniApp in Frameworks */,
+				2C3CADA62C8D45E8006F9A5E /* WeatherMiniApp in Frameworks */,
+				2C9109722C8D4CC000640213 /* NotesMiniApp in Frameworks */,
+				2C3CADA32C8D45D1006F9A5E /* CalculatorMiniApp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +137,9 @@
 			);
 			name = PocketApps;
 			packageProductDependencies = (
-				2CE491E12C8B458E000EF0DD /* WeatherMiniApp */,
-				2CB7A49A2C8CC5BD004430DF /* CalculatorMiniApp */,
-				2CAB86522C8D08D80059EDA0 /* NotesMiniApp */,
+				2C3CADA22C8D45D1006F9A5E /* CalculatorMiniApp */,
+				2C3CADA52C8D45E8006F9A5E /* WeatherMiniApp */,
+				2C9109712C8D4CC000640213 /* NotesMiniApp */,
 			);
 			productName = PocketApps;
 			productReference = 2CE491C92C8B2D1D000EF0DD /* PocketApps.app */;
@@ -170,9 +170,9 @@
 			);
 			mainGroup = 2CE491C02C8B2D1D000EF0DD;
 			packageReferences = (
-				2CE491E02C8B458E000EF0DD /* XCLocalSwiftPackageReference "../WeatherMiniApp" */,
-				2CB7A4992C8CC5BD004430DF /* XCLocalSwiftPackageReference "../CalculatorMiniApp" */,
-				2CAB86512C8D08D80059EDA0 /* XCLocalSwiftPackageReference "../NotesMiniApp" */,
+				2C3CADA12C8D45D1006F9A5E /* XCRemoteSwiftPackageReference "CalculatorMiniApp" */,
+				2C3CADA42C8D45E8006F9A5E /* XCRemoteSwiftPackageReference "WeatherMiniApp" */,
+				2C9109702C8D4CC000640213 /* XCRemoteSwiftPackageReference "NotesMiniApp" */,
 			);
 			productRefGroup = 2CE491CA2C8B2D1D000EF0DD /* Products */;
 			projectDirPath = "";
@@ -436,33 +436,48 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		2CAB86512C8D08D80059EDA0 /* XCLocalSwiftPackageReference "../NotesMiniApp" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../NotesMiniApp;
+/* Begin XCRemoteSwiftPackageReference section */
+		2C3CADA12C8D45D1006F9A5E /* XCRemoteSwiftPackageReference "CalculatorMiniApp" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanych2202/CalculatorMiniApp";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-		2CB7A4992C8CC5BD004430DF /* XCLocalSwiftPackageReference "../CalculatorMiniApp" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../CalculatorMiniApp;
+		2C3CADA42C8D45E8006F9A5E /* XCRemoteSwiftPackageReference "WeatherMiniApp" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanych2202/WeatherMiniApp";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-		2CE491E02C8B458E000EF0DD /* XCLocalSwiftPackageReference "../WeatherMiniApp" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../WeatherMiniApp;
+		2C9109702C8D4CC000640213 /* XCRemoteSwiftPackageReference "NotesMiniApp" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanych2202/NotesMiniApp";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2CAB86522C8D08D80059EDA0 /* NotesMiniApp */ = {
+		2C3CADA22C8D45D1006F9A5E /* CalculatorMiniApp */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = NotesMiniApp;
-		};
-		2CB7A49A2C8CC5BD004430DF /* CalculatorMiniApp */ = {
-			isa = XCSwiftPackageProductDependency;
+			package = 2C3CADA12C8D45D1006F9A5E /* XCRemoteSwiftPackageReference "CalculatorMiniApp" */;
 			productName = CalculatorMiniApp;
 		};
-		2CE491E12C8B458E000EF0DD /* WeatherMiniApp */ = {
+		2C3CADA52C8D45E8006F9A5E /* WeatherMiniApp */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 2C3CADA42C8D45E8006F9A5E /* XCRemoteSwiftPackageReference "WeatherMiniApp" */;
 			productName = WeatherMiniApp;
+		};
+		2C9109712C8D4CC000640213 /* NotesMiniApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C9109702C8D4CC000640213 /* XCRemoteSwiftPackageReference "NotesMiniApp" */;
+			productName = NotesMiniApp;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
